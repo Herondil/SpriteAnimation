@@ -1,0 +1,27 @@
+/* oiseau */
+body > div:nth-child(1) > div:nth-child(1) {
+  background-image: url(bird.svg);
+  width: 900px;
+  height: 125px;
+  background-position-x: 0px;
+  background-repeat: no-repeat;
+  animation-name: vol;
+  animation-timing-function: steps(10);
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+}
+
+/* conteneur */
+body > div:nth-child(1) {
+  width: 88px;
+  overflow: hidden;
+  animation: mouvement linear 5s infinite;
+}
+
+@keyframes vol{
+  100% {background-position-x: -900px;}
+}
+
+@keyframes mouvement{
+  100% {transform:translateX(700px);}
+}
